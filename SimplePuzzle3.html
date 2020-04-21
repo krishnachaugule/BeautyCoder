@@ -3,27 +3,98 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Hardest Level</title>
-    <style>
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .topnav a.active {
-            background-color: #4CAF50;
-            color: white;
-        }
-    </style>
+    <title>Harder Level</title>
+    <link rel="stylesheet" src="Puzzles.css" />
 </head>
-<body style="        font-family: 'Century Gothic';
-        font-size: 50px;
-        margin: 100px">
+<body style="font-family: 'Century Gothic'; font-size:50px; margin:100px">
     <div class="topnav">
         <a class="active" href="HomePage.html">Home</a>
         <a class="active" href="SimplePuzzle1.html">Simple Level</a>
         <a class="active" href="SimplePuzzle2.html">harder level</a>
         <a class="active" href="SimplePuzzle3.html">Hardest Level</a>
     </div>
+    <script>
+        function myAnswer1() {
+            var a = document.getElementById("A1").value;
+            var b = document.getElementById("A2").value;
+            var c = document.getElementById("A3").value;
+            var d = document.getElementById("A4").value;
+            var e = document.getElementById("A5").value;
+            var f = document.getElementById("A6").value;
+            var g = document.getElementById("A7").value;
+            var h = document.getElementById("A8").value;
+            if (a == 0 && b == 1 && c == 20 && d == 3 && e == 2 && f == 3 && g == 10 && h == -8) {
+                alert("Congratulations! You got that right!")
+            }
+            else {
+                alert("Don't Give Up!! Try Again!!")
+            }
+        }
+    </script>
+    <form>
+        <table>
+            <tr>
+                <td class="border"><input type="text" id="A1" class="formvalue" /></td>
+                <td class="border">÷</td>
+                <td class="border"><input type="text" id="A2" class="formvalue" /></td>
+                <td class="border">-</td>
+                <td class="border"><input type="text" id="A3" class="formvalue" /></td>
+                <td class="border">=2</td>
+            </tr>
+            <tr>
+                <td class="border">+</td>
+                <td class="border2"></td>
+                <td class="border">+</td>
+                <td class="border2"></td>
+                <td class="border">+</td>
+                <td class="border2"></td>
+            </tr>
+            <tr>
+                <td class="border">(<input type="text" id="A4" class="formvalue" /></td>
+                <td class="border">+</td>
+                <td class="border"><input type="text" id="A5" class="formvalue" />)</td>
+                <td class="border">÷</td>
+                <td class="border"><input type="text" id="A6" class="formvalue" /></td>
+                <td class="noborder">=</td>
+            </tr>
+            <tr>
+                <td class="border">-</td>
+                <td class="border2"></td>
+                <td class="border">x</td>
+                <td class="border2"></td>
+                <td class="border">+</td>
+                <td class="noborder"></td>
+                <td class="noborder"></td>
+            </tr>
+            <tr>
+                <td class="border"><input type="text" id="A" class="formvalue" /></td>
+                <td class="border">x</td>
+                <td class="border"><input type="text" id="A" class="formvalue" /></td>
+                <td class="border">-</td>
+                <td class="border"><input type="text" id="A" class="formvalue" /></td>
+                <td class="noborder">=</td>
+                <td class="noborder">38</td>
+            </tr>
+            <tr>
+                <td class="noborder">=</td>
+                <td class="noborder"></td>
+                <td class="noborder">=</td>
+                <td class="noborder"></td>
+                <td class="noborder">=</td>
+                <td class="noborder"></td>
+                <td class="noborder"></td>
+            </tr>
+            <tr>
+                <td class="noborder">0</td>
+                <td class="noborder"></td>
+                <td class="noborder">80</td>
+                <td class="noborder"></td>
+                <td class="noborder">10</td>
+                <td class="noborder"></td>
+                <td class="noborder"></td>
+            </tr>
+        </table>
+        <input style="font-size:30px; width:110px" type="button" value="Submit" onclick="myAnswer1();" />
+    </form>
 </body>
 </html>
