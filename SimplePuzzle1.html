@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Simple Level</title>
+    <style>
+        td{
+            text-align:center;
+
+        }
+        input {
+            height:35px;
+            width: 60px;
+            font-size:30px;
+        }
+        form {
+            background-color:aquamarine;
+            width:850px;
+            text-align:center;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body style="font-family: 'Century Gothic'; font-size:50px; margin:100px">
+    <div class="topnav">
+        <a class="active" href="HomePage.html">Home</a>
+        <a class="active" href="SimplePuzzle1.html">Simple Level</a>
+        <a class="active" href="SimplePuzzle2.html">Harder Level</a>
+        <a class="active" href="SimplePuzzle3.html">Hardest Level</a>
+    </div>
+    <script language="javascript">
+        function mySum() {
+
+            var x = document.getElementById("S1").value;
+            var y = document.getElementById("S2").value;
+            var z = document.getElementById("S3").value;
+            var a = document.getElementById("S4").value;
+            if (x == 1.5 && y == 12.5 && z == 13.5 && a == 3.5) {
+                alert("Congratulations! You got that right!")
+            }
+            else if (x == 1.5 && y == 12.5 && z == 13.5 || x == 1.5 && z == 13.5 && a == 3.5 || y == 12.5 && z == 13.5 && a == 3.5 || z == 13.5 && a == 3.5 && x == 1.5 || z == 13.5 && a == 3.5 && y == 12.5 || y == 12.5 && z == 13.5 && a == 3.5 || z == 13.5 && a == 3.5 && x == 1.5) {
+                alert("Almost There!! Try again!!")
+            }
+            else if (x == 1.5 && y == 12.5 || x == 1.5 && z == 13.5 || x == 1.5 && a == 3.5 || y == 12.5 && z == 13.5 || y == 12.5 && a == 3.5 || z == 13.5 && a == 3.5 || z == 13.5 && y == 12.5)
+            //  z == 13.5 && x == 1.5 ||
+            {
+                alert("Getting There!! Try sagin!!")
+            }
+            else {
+                alert("Try again!!")
+            }
+        }
+    </script>
+    <form>
+        <table>
+            <tr>
+                <td><input type="text" id="S1" name="S1" /></td>
+                <td>+</td>
+                <td><input type="text" id="S2" name="S2" /></td>
+                <td>=</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td></td>
+                <td>+</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="S3" name="S3" /></td>
+                <td>-</td>
+                <td><input type="text" id="S4" name="S4" /></td>
+                <td>=</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>||</td>
+                <td></td>
+                <td>||</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td></td>
+                <td>16</td>
+                <td></td>
+            </tr>
+        </table>
+        <input type="button" name="Submit" value="Submit" onclick="mySum();" style="width:120px; height:50px" />
+    </form>
+</body>
+</html>
