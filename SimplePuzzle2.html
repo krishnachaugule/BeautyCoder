@@ -4,15 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <title>Harder Level</title>
-    <link rel="stylesheet" src="Puzzle2.css" />
+    <link rel="stylesheet" href="Styles\Puzzles.css" />
 </head>
-<body style="font-family: 'Century Gothic'; font-size:50px; margin:100px">
-    <div class="topnav">
-        <a class="active" href="HomePage.html">Home</a>
-        <a class="active" href="SimplePuzzle1.html">Simple Level</a>
-        <a class="active" href="SimplePuzzle2.html">harder level</a>
-        <a class="active" href="SimplePuzzle3.html">Hardest Level</a>
-    </div>
+<body class="Body">
+    <!--<script src="Scripts\includeHeader.js"></script>-->
     <script>
         function myAnswer1() {
             var a = document.getElementById("A1").value;
@@ -31,7 +26,22 @@
             }
         }
     </script>
-    <form>
+    <img id="image" src="images/Capture.JPG" />
+    <!--<div w3-include-html="Header.html"></div>-->
+    <div class="topnav">
+        <a class="active" href="HomePage.html">Home | </a>
+        <a class="active" href="SimplePuzzle1.html">Simple Level | </a>
+        <a class="active" href="SimplePuzzle2.html">Harder level | </a>
+        <a class="active" href="SimplePuzzle3.html">Hardest Level</a>
+    </div>
+    <br />
+    <br />
+    Enter the values in the boxes, and press Submit.
+    <br />
+    If you get it right, move on to the next level!
+    <br />
+    <br />
+    <form class="margin">
         <table>
             <tr>
                 <td class="border"><input type="text" id="A1" class="formvalue" /></td>
@@ -39,8 +49,7 @@
                 <td class="border"><input type="text" id="A2" class="formvalue" /></td>
                 <td class="border">x</td>
                 <td class="border"><input type="text" id="A3" class="formvalue" /></td>
-                <td class="noborder">=</td>
-                <td class="noborder">20</td>
+                <td class="border">=20</td>
             </tr>
             <tr>
                 <td class="border">+</td>
@@ -48,8 +57,7 @@
                 <td class="border">x</td>
                 <td class="border2"></td>
                 <td class="border">-</td>
-                <td class="noborder"></td>
-                <td class="noborder"></td>
+                <td class="border"></td>
             </tr>
             <tr>
                 <td class="border"><input type="text" id="A4" class="formvalue" /></td>
@@ -57,8 +65,7 @@
                 <td class="border">8</td>
                 <td class="border">x</td>
                 <td class="border"><input type="text" id="A5" class="formvalue" /></td>
-                <td class="noborder">=</td>
-                <td class="noborder">48</td>
+                <td class="border">=48</td>
             </tr>
             <tr>
                 <td class="border">-</td>
@@ -66,8 +73,7 @@
                 <td class="border">x</td>
                 <td class="border2"></td>
                 <td class="border">+</td>
-                <td class="noborder"></td>
-                <td class="noborder"></td>
+                <td class="border"></td>
             </tr>
             <tr>
                 <td class="border"><input type="text" id="A6" class="formvalue" /></td>
@@ -75,29 +81,23 @@
                 <td class="border"><input type="text" id="A7" class="formvalue" /></td>
                 <td class="border">-</td>
                 <td class="border"><input type="text" id="A8" class="formvalue" /></td>
-                <td class="noborder">=</td>
-                <td class="noborder">38</td>
+                <td class="border">=38</td>
             </tr>
             <tr>
-                <td class="noborder">=</td>
-                <td class="noborder"></td>
-                <td class="noborder">=</td>
-                <td class="noborder"></td>
-                <td class="noborder">=</td>
-                <td class="noborder"></td>
-                <td class="noborder"></td>
-            </tr>
-            <tr>
-                <td class="noborder">0</td>
-                <td class="noborder"></td>
-                <td class="noborder">80</td>
-                <td class="noborder"></td>
-                <td class="noborder">10</td>
-                <td class="noborder"></td>
-                <td class="noborder"></td>
+                <td class="border">=0</td>
+                <td class="border"></td>
+                <td class="border">=80</td>
+                <td class="border"></td>
+                <td class="border">=10</td>
+                <td class="border"></td>
             </tr>
         </table>
-        <input style="font-size:30px; width:110px" type="button" value="Submit" onclick="myAnswer1();" />
+        <br />
+        <input class="extra" type="button" value="Submit" onclick="myAnswer1();" />
     </form>
+    <!--<script>
+        includeHTML();
+    </script>-->
+
 </body>
 </html>

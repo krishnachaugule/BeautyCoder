@@ -1,11 +1,11 @@
-﻿ .border, .border2
- {
+﻿.border, .border2 {
     border: solid black;
     height: 10px;
     width: 50px;
     text-align: center;
 }
- .border2 {
+
+.border2 {
     background-color: black;
 }
 

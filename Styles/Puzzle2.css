@@ -24,11 +24,11 @@ input {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color:#b0c9cf;
+    background-size:auto
 }
 
 .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #b0c9cf;
+    background-size: auto
 }
