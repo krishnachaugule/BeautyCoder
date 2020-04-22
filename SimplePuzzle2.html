@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title>Harder Level</title>
     <link rel="stylesheet" href="Styles\Puzzles.css" />
+    <script src="Scripts/common.js"></script>
+
 </head>
 <body class="Body">
     <!--<script src="Scripts\includeHeader.js"></script>-->
@@ -25,15 +27,34 @@
                 alert("Don't Give Up!! Try Again!!")
             }
         }
+
     </script>
     <img id="image" src="images/Capture.JPG" />
     <!--<div w3-include-html="Header.html"></div>-->
-    <div class="topnav">
-        <a class="active" href="HomePage.html">Home | </a>
-        <a class="active" href="SimplePuzzle1.html">Simple Level | </a>
-        <a class="active" href="SimplePuzzle2.html">Harder level | </a>
-        <a class="active" href="SimplePuzzle3.html">Hardest Level</a>
-    </div>
+        <div id="divMenu" class="topnav">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <a class="active" href="HomePage.html">Home |</a>
+                        <a class="active" href="SimplePuzzle1.html">Simple Level |</a>
+                        <a class="active" href="SimplePuzzle2.html">Harder Level |</a>
+                        <a class="active" href="SimplePuzzle3.html">Hardest Level</a>
+                    </td>
+                    <td align="right">
+                        select a theme:
+                        <select id="color" onchange="myColor();">
+                            <option value="grey">Grey</option>
+                            <option value="pink">Pink</option>
+                            <option value="lightblue">Light Blue</option>
+                            <option value="lightgreen">Light Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="orange">Orange</option>
+                        </select>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
     <br />
     <br />
     Enter the values in the boxes, and press Submit.

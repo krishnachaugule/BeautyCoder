@@ -51,3 +51,10 @@ input {
 .margin{
     margin-left:50px;
 }
+select{
+    height:25px;
+    vertical-align:central;
+}
+td{
+    vertical-align:central;
+}
