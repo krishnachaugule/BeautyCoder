@@ -9,10 +9,12 @@
             var g = document.getElementById("A7").value;
             var h = document.getElementById("A8").value;
             var i = document.getElementById("A9").value;
-            if (a == 6 && b == 1 && c == 4 && d == 7 && e == 8 && f == 5 && g == 9 && h == 2 && i == 3) {
+        if (a == 6 && b == 1 && c == 4 && d == 7 && e == 8 && f == 5 && g == 9 && h == 2 && i == 3)
+        {
         alert("Congratulations! You got that right!")
-    }
-            else {
-        alert("Don't Give Up!! Try Again!!")
-    }
         }
+        else
+        {
+        alert("Don't Give Up!! Try Again!!")
+        }
+    }
