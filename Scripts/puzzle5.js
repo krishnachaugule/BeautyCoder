@@ -9,5 +9,5 @@
     }
         }
 function myHint() {
-    alert("Worried about the last two digits? Try to get the last two digits from the first two digits in the answer.")
+    alert("Worried about the last two digits? Try to get the last two digits from the first four digits in the answer.")
 }
