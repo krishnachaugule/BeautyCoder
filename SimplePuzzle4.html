@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="Styles\Puzzles.css" />
+    <script src="Scripts/common.js"></script>
+    <script src="Scripts/puzzle4.js"></script>
+</head>
+<body class="Body">
+    
+    <img id="image" src="images/Capture.JPG" />
+    <!--<div w3-include-html="Header.html"></div>-->
+    <div id="divMenu" class="topnav">
+        <table width="100%">
+            <tr>
+                <td>
+                    <a class="active" href="HomePage.html">Home |</a>
+                    <a class="active" href="SimplePuzzle1.html">Level 1 |</a>
+                    <a class="active" href="SimplePuzzle2.html">Level 2 |</a>
+                    <a class="active" href="SimplePuzzle3.html">Level 3 |</a>
+                    <a class="active" href="SimplePuzzle4.html">Level 4 |</a>
+                    <a class="active" href="SimplePuzzle5.html">Level 5 |</a>
+                    <a class="active" href="feedback.html">Feedback</a>
+                </td>
+                <td align="right">
+                    select a theme:
+                    <select id="color" onchange="myColor();">
+                        <option value="grey">Grey</option>
+                        <option value="pink">Pink</option>
+                        <option value="lightblue">Light Blue</option>
+                        <option value="lightgreen">Light Green</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="orange">Orange</option>
+                    </select>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <br />
+    Enter the values in the boxes, and press Submit.
+    <br />
+    If you get it right, move on to the next level!
+    <br />
+    <br />
+    <form class="margin">
+        <table>
+            <tr>
+                <td class="border3"><img class="image1" src="images/Part1.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part2.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part1.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part2.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part3.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part5.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part6.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="border3"><img class="image1" src="images/Part4.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part2.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part4.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part2.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part4.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part5.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part7.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="border3"><img class="image1" src="images/Part8.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part2.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part8.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part2.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part8.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part5.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part10.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="border3"><img class="image1" src="images/Part1.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part2.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part11.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part2.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part13.jpg" /></td>
+                <td class="border3"><img class="image1" src="images/Part5.jpg" /></td>
+                <td class="border3"><input maxlength="3" type="number" style="width:50px; height:50px" id="A1" /></td>
+            </tr>
+        </table>
+        <input class="extra" type="button" value="Submit" onclick="myAnswer4();" />
+    </form>
+</body>
+</html>

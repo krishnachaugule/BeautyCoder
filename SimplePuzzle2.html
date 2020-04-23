@@ -6,29 +6,12 @@
     <title>Harder Level</title>
     <link rel="stylesheet" href="Styles\Puzzles.css" />
     <script src="Scripts/common.js"></script>
+    <script src="Scripts/puzzle2.js"></script>
 
 </head>
 <body class="Body">
     <!--<script src="Scripts\includeHeader.js"></script>-->
-    <script>
-        function myAnswer1() {
-            var a = document.getElementById("A1").value;
-            var b = document.getElementById("A2").value;
-            var c = document.getElementById("A3").value;
-            var d = document.getElementById("A4").value;
-            var e = document.getElementById("A5").value;
-            var f = document.getElementById("A6").value;
-            var g = document.getElementById("A7").value;
-            var h = document.getElementById("A8").value;
-            if (a == 0 && b == 1 && c == 20 && d == 3 && e == 2 && f == 3 && g == 10 && h == -8) {
-                alert("Congratulations! You got that right!")
-            }
-            else {
-                alert("Don't Give Up!! Try Again!!")
-            }
-        }
-
-    </script>
+   
     <img id="image" src="images/Capture.JPG" />
     <!--<div w3-include-html="Header.html"></div>-->
         <div id="divMenu" class="topnav">
@@ -36,9 +19,12 @@
                 <tr>
                     <td>
                         <a class="active" href="HomePage.html">Home |</a>
-                        <a class="active" href="SimplePuzzle1.html">Simple Level |</a>
-                        <a class="active" href="SimplePuzzle2.html">Harder Level |</a>
-                        <a class="active" href="SimplePuzzle3.html">Hardest Level</a>
+                        <a class="active" href="SimplePuzzle1.html">Level 1 |</a>
+                        <a class="active" href="SimplePuzzle2.html">Level 2 |</a>
+                        <a class="active" href="SimplePuzzle3.html">Level 3 |</a>
+                        <a class="active" href="SimplePuzzle4.html">Level 4 |</a>
+                        <a class="active" href="SimplePuzzle5.html">Level 5 |</a>
+                        <a class="active" href="feedback.html">Feedback</a>
                     </td>
                     <td align="right">
                         select a theme:
@@ -65,11 +51,11 @@
     <form class="margin">
         <table>
             <tr>
-                <td class="border"><input type="text" id="A1" class="formvalue" /></td>
+                <td class="border"><input maxlength="2" type="number" id="A1" class="formvalue" /></td>
                 <td class="border">+</td>
-                <td class="border"><input type="text" id="A2" class="formvalue" /></td>
+                <td class="border"><input maxlength="2" type="number" id="A2" class="formvalue" /></td>
                 <td class="border">x</td>
-                <td class="border"><input type="text" id="A3" class="formvalue" /></td>
+                <td class="border"><input maxlength="2" type="number" id="A3" class="formvalue" /></td>
                 <td class="border">=20</td>
             </tr>
             <tr>
@@ -78,14 +64,14 @@
                 <td class="border">x</td>
                 <td class="border2"></td>
                 <td class="border">-</td>
-                <td class="border"></td>
+                <td class="border2"></td>
             </tr>
             <tr>
-                <td class="border"><input type="text" id="A4" class="formvalue" /></td>
+                <td class="border"><input maxlength="2" type="number" id="A4" class="formvalue" /></td>
                 <td class="border">x</td>
                 <td class="border">8</td>
                 <td class="border">x</td>
-                <td class="border"><input type="text" id="A5" class="formvalue" /></td>
+                <td class="border"><input maxlength="2" type="number" id="A5" class="formvalue" /></td>
                 <td class="border">=48</td>
             </tr>
             <tr>
@@ -94,27 +80,27 @@
                 <td class="border">x</td>
                 <td class="border2"></td>
                 <td class="border">+</td>
-                <td class="border"></td>
+                <td class="border2"></td>
             </tr>
             <tr>
-                <td class="border"><input type="text" id="A6" class="formvalue" /></td>
+                <td class="border"><input maxlength="2" type="number" id="A6" class="formvalue" /></td>
                 <td class="border">x</td>
-                <td class="border"><input type="text" id="A7" class="formvalue" /></td>
+                <td class="border"><input maxlength="2" type="number" id="A7" class="formvalue" /></td>
                 <td class="border">-</td>
-                <td class="border"><input type="text" id="A8" class="formvalue" /></td>
+                <td class="border"><input maxlength="2" type="number" id="A8" class="formvalue" /></td>
                 <td class="border">=38</td>
             </tr>
             <tr>
                 <td class="border">=0</td>
-                <td class="border"></td>
+                <td class="border2"></td>
                 <td class="border">=80</td>
-                <td class="border"></td>
+                <td class="border2"></td>
                 <td class="border">=10</td>
-                <td class="border"></td>
+                <td class="border2"></td>
             </tr>
         </table>
         <br />
-        <input class="extra" type="button" value="Submit" onclick="myAnswer1();" />
+        <input class="extra" type="button" value="Submit" onclick="myAnswer2();" />
     </form>
     <!--<script>
         includeHTML();

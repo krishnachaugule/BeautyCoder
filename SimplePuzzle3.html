@@ -6,29 +6,12 @@
     <title>Harder Level</title>
     <link rel="stylesheet" href="Styles\Puzzles.css" />
     <script src="Scripts/common.js"></script>
+    <script src="Scripts/Puzzle3.js"></script>
 
 </head>
 <body class="Body">
     <!--<script src="Scripts\includeHeader.js"></script>-->
-    <script>
-        function myAnswer1() {
-            var a = document.getElementById("A1").value;
-            var b = document.getElementById("A2").value;
-            var c = document.getElementById("A3").value;
-            var d = document.getElementById("A4").value;
-            var e = document.getElementById("A5").value;
-            var f = document.getElementById("A6").value;
-            var g = document.getElementById("A7").value;
-            var h = document.getElementById("A8").value;
-            var i = document.getElementById("A9").value;
-            if (a == 6 && b == 1 && c == 4 && d == 7 && e == 8 && f == 5 && g == 9 && h == 2 && i == 3) {
-                alert("Congratulations! You got that right!")
-            }
-            else {
-                alert("Don't Give Up!! Try Again!!")
-            }
-        }
-    </script>
+    
     <img id="image" src="images/Capture.JPG" />
     <!--<div w3-include-html="Header.html"></div>-->
         <div id="divMenu" class="topnav">
@@ -36,9 +19,12 @@
                 <tr>
                     <td>
                         <a class="active" href="HomePage.html">Home |</a>
-                        <a class="active" href="SimplePuzzle1.html">Simple Level |</a>
-                        <a class="active" href="SimplePuzzle2.html">Harder Level |</a>
-                        <a class="active" href="SimplePuzzle3.html">Hardest Level</a>
+                        <a class="active" href="SimplePuzzle1.html">Level 1 |</a>
+                        <a class="active" href="SimplePuzzle2.html">Level 2 |</a>
+                        <a class="active" href="SimplePuzzle3.html">Level 3 |</a>
+                        <a class="active" href="SimplePuzzle4.html">Level 4 |</a>
+                        <a class="active" href="SimplePuzzle5.html">Level 5 |</a>
+                        <a class="active" href="feedback.html">Feedback</a>
                     </td>
                     <td align="right">
                         select a theme:
@@ -59,17 +45,17 @@
     <br />
     Enter the values in the boxes, and press Submit.
     <br />
-    If you get it right, savor the moment, and wait for the next puzzle to upload!
+    If you get it right, move on to the next level!
     <br />
     <br />
     <form class="margin">
         <table>
             <tr>
-                <td class="border"><input type="text" id="A1" class="formvalue" /></td>
+                <td class="border"><input maxlength="1" type="number" id="A1" class="formvalue" /></td>
                 <td class="border">÷</td>
-                <td class="border"><input type="text" id="A2" class="formvalue" /></td>
+                <td class="border"><input maxlength="1" type="number" id="A2" class="formvalue" /></td>
                 <td class="border">-</td>
-                <td class="border"><input type="text" id="A3" class="formvalue" /></td>
+                <td class="border"><input maxlength="1" type="number" id="A3" class="formvalue" /></td>
                 <td class="border">=2</td>
             </tr>
             <tr>
@@ -81,11 +67,11 @@
                 <td class="border2"></td>
             </tr>
             <tr>
-                <td class="border">(<input type="text" id="A4" class="formvalue" /></td>
+                <td class="border">(<input maxlength="1" type="number" id="A4" class="formvalue" /></td>
                 <td class="border">+</td>
-                <td class="border"><input type="text" id="A5" class="formvalue" />)</td>
+                <td class="border"><input maxlength="1" type="number" id="A5" class="formvalue" />)</td>
                 <td class="border">÷</td>
-                <td class="border"><input type="text" id="A6" class="formvalue" /></td>
+                <td class="border"><input maxlength="1" type="number" class="formvalue" /></td>
                 <td class="border">=3</td>
             </tr>
             <tr>
@@ -97,11 +83,11 @@
                 <td class="border2"></td>
             </tr>
             <tr>
-                <td class="border"><input type="text" id="A7" class="formvalue" /></td>
+                <td class="border"><input maxlength="1" type="number" id="A7" class="formvalue" /></td>
                 <td class="border">x</td>
-                <td class="border"><input type="text" id="A8" class="formvalue" /></td>
+                <td class="border"><input maxlength="1" type="number" id="A8" class="formvalue" /></td>
                 <td class="border">÷</td>
-                <td class="border"><input type="text" id="A9" class="formvalue" /></td>
+                <td class="border"><input maxlength="1" type="number" id="A9" class="formvalue" /></td>
                 <td class="border">=6</td>
             </tr>
             <tr>
@@ -114,7 +100,7 @@
             </tr>
         </table>
         <br />
-        <input class="extra" type="button" value="Submit" onclick="myAnswer1();" />
+        <input class="extra" type="button" value="Submit" onclick="myAnswer3();" />
     </form>
     <!--<script>
         includeHTML();

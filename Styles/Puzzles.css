@@ -6,7 +6,7 @@
  {
     border: solid black;
     height: 10px;
-    width: 50px;
+    width: 65px;
     text-align: center;
 }
  .border2 {
@@ -19,6 +19,7 @@
 
 table {
     border-collapse: collapse;
+
 }
 
 input {
@@ -57,4 +58,21 @@ select{
 }
 td{
     vertical-align:central;
+}
+.img{
+    height:300px;
+    width:300px;
+    border:1px solid;
+
+}
+.border3{
+    height:50px;
+    width:50px;
+}
+.image1{
+    height:50px;
+    width:50px;
+}
+value{
+    color:lightgrey;
 }

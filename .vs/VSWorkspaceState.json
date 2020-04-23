@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\images",
+    "\\python",
+    "\\Scripts",
+    "\\Styles"
   ],
-  "SelectedNode": "\\SimplePuzzle2.html",
+  "SelectedNode": "\\Scripts\\common.js",
   "PreviewInSolutionExplorer": false
 }
