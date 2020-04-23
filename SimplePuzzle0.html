@@ -3,15 +3,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Harder Level</title>
+    <title></title>
     <link rel="stylesheet" href="Styles\Puzzles.css" />
     <script src="Scripts/common.js"></script>
-    <script src="Scripts/puzzle3.js"></script>
-
+    <script src="Scripts/Puzzle0.js"></script>
 </head>
-<body class="Body" onload="checkCookie();">
-    <!--<script src="Scripts\includeHeader.js"></script>-->
-
+<body>
     <img id="image" src="images/Capture.JPG" />
     <!--<div w3-include-html="Header.html"></div>-->
     <div id="divMenu" class="topnav">
@@ -52,12 +49,11 @@
     <form class="margin">
         <table>
             <tr>
-                <td class="border"><input maxlength="1" type="number" id="A1" class="formvalue" /></td>
-                <td class="border">÷</td>
-                <td class="border"><input maxlength="1" type="number" id="A2" class="formvalue" /></td>
-                <td class="border">-</td>
-                <td class="border"><input maxlength="1" type="number" id="A3" class="formvalue" /></td>
-                <td class="border">=2</td>
+                <td class="border">12</td>
+                <td class="border">+</td>
+                <td class="border">18</td>
+                <td class="border">=</td>
+                <td class="border">30</td>
             </tr>
             <tr>
                 <td class="border">+</td>
@@ -65,47 +61,31 @@
                 <td class="border">+</td>
                 <td class="border2"></td>
                 <td class="border">+</td>
-                <td class="border2"></td>
             </tr>
             <tr>
-                <td class="border">(<input maxlength="1" type="number" id="A4" class="formvalue" /></td>
+                <td class="border">16</td>
                 <td class="border">+</td>
-                <td class="border"><input maxlength="1" type="number" id="A5" class="formvalue" />)</td>
-                <td class="border">÷</td>
-                <td class="border"><input maxlength="1" type="number" id="A6" class="formvalue" /></td>
-                <td class="border">=3</td>
+                <td class="border"><input type="number" maxlength="4" id="S1" name="S1" /></td>
+                <td class="border">=</td>
+                <td class="border">29</td>
             </tr>
             <tr>
-                <td class="border">-</td>
+                <td class="border">=</td>
                 <td class="border2"></td>
-                <td class="border">-</td>
+                <td class="border">=</td>
                 <td class="border2"></td>
-                <td class="border">-</td>
-                <td class="border2"></td>
+                <td class="border">+</td>
             </tr>
             <tr>
-                <td class="border"><input maxlength="1" type="number" id="A7" class="formvalue" /></td>
-                <td class="border">x</td>
-                <td class="border"><input maxlength="1" type="number" id="A8" class="formvalue" /></td>
-                <td class="border">÷</td>
-                <td class="border"><input maxlength="1" type="number" id="A9" class="formvalue" /></td>
-                <td class="border">=6</td>
-            </tr>
-            <tr>
-                <td class="border">=4</td>
-                <td class="border2"></td>
-                <td class="border">=7</td>
-                <td class="border2"></td>
-                <td class="border">=6</td>
-                <td class="border2"></td>
+                <td class="border">28</td>
+                <td class="border">+</td>
+                <td class="border">31</td>
+                <td class="border">=</td>
+                <td class="border"><input type="number" maxlength="4" id="S2" name="S2" /></td>
             </tr>
         </table>
         <br />
-        <input class="extra" type="button" value="Submit" onclick="myAnswer3();" />
+        <input class="extra" type="button" name="Submit" value="Submit" onclick="mySum0();" />
     </form>
-    <!--<script>
-        includeHTML();
-    </script>-->
-
 </body>
 </html>
