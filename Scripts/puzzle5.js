@@ -8,3 +8,6 @@
         alert("Don't Give Up!! Try Again!!")
     }
         }
+function myHint() {
+    alert("Worried about the last two digits? Try to get the last two digits from the first two digits in the answer.")
+}

@@ -25,3 +25,6 @@ function myColor() {
     document.getElementById("divMenu").style.backgroundColor = document.getElementById("color").value;
 
 }
+function myHint(){
+    alert("Why do wehave to think of only whole numbers all the time?! Can't we get something for $2 and 30 cents?")
+}

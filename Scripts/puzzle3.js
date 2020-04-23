@@ -18,3 +18,6 @@
         alert("Don't Give Up!! Try Again!!")
         }
     }
+function myHint() {
+    alert("To solve a problem, sometimes you need to reciprocate, and think it over again!")
+}

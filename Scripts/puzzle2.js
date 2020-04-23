@@ -15,4 +15,6 @@
         alert("Don't Give Up!! Try Again!!")
     }
         }
-
+function myHint() {
+    alert("People can be pessimists (negative) sometimes! Not all are positive like you!")
+}
