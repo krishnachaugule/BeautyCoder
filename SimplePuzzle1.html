@@ -9,7 +9,7 @@
     <script src="Scripts/Puzzle1.js"></script>
 
 </head>
-<body class="Body">
+<body class="Body" onload="checkCookie();">
     <!--<script src="Scripts\includeHeader.js"></script>-->
     <script src="Scripts/puzzle1.js"></script>
     <img id="image" src="images/Capture.JPG" />
@@ -26,7 +26,7 @@
                     <a class="active" href="feedback.html">Feedback</a>
                 </td>
                 <td align="right">
-                    select a theme:
+                    Select a theme:
                     <select id="color" onchange="myColor();">
                         <option value="grey">Grey</option>
                         <option value="pink">Pink</option>

@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="Body">
+<body class="Body" onload="checkCookie();">
     <img id="image" src="images/Capture.JPG" />
         <div id="divMenu" class="topnav">
             <table width="100%">
@@ -25,7 +25,7 @@
                         <a class="active" href="feedback.html">Feedback</a>
                     </td>
                     <td align="right">
-                        select a theme:
+                        Select a theme:
                         <select id="color" onchange="myColor();">
                             <option value="grey">Grey</option>
                             <option value="pink">Pink</option>

@@ -9,8 +9,8 @@
     <script src="Scripts/puzzle5.js"></script>
 
 </head>
-<body>
-    
+<body class="Body" onload="checkCookie();">
+
     <img id="image" src="images/Capture.JPG" />
     <!--<div w3-include-html="Header.html"></div>-->
     <div id="divMenu" class="topnav">
@@ -26,7 +26,7 @@
                     <a class="active" href="feedback.html">Feedback</a>
                 </td>
                 <td align="right">
-                    select a theme:
+                    Select a theme:
                     <select id="color" onchange="myColor();">
                         <option value="grey">Grey</option>
                         <option value="pink">Pink</option>

@@ -9,38 +9,38 @@
     <script src="Scripts/puzzle2.js"></script>
 
 </head>
-<body class="Body">
+<body class="Body" onload="checkCookie();">
     <!--<script src="Scripts\includeHeader.js"></script>-->
-   
+
     <img id="image" src="images/Capture.JPG" />
     <!--<div w3-include-html="Header.html"></div>-->
-        <div id="divMenu" class="topnav">
-            <table width="100%">
-                <tr>
-                    <td>
-                        <a class="active" href="HomePage.html">Home |</a>
-                        <a class="active" href="SimplePuzzle1.html">Level 1 |</a>
-                        <a class="active" href="SimplePuzzle2.html">Level 2 |</a>
-                        <a class="active" href="SimplePuzzle3.html">Level 3 |</a>
-                        <a class="active" href="SimplePuzzle4.html">Level 4 |</a>
-                        <a class="active" href="SimplePuzzle5.html">Level 5 |</a>
-                        <a class="active" href="feedback.html">Feedback</a>
-                    </td>
-                    <td align="right">
-                        select a theme:
-                        <select id="color" onchange="myColor();">
-                            <option value="grey">Grey</option>
-                            <option value="pink">Pink</option>
-                            <option value="lightblue">Light Blue</option>
-                            <option value="lightgreen">Light Green</option>
-                            <option value="yellow">Yellow</option>
-                            <option value="orange">Orange</option>
-                        </select>
+    <div id="divMenu" class="topnav">
+        <table width="100%">
+            <tr>
+                <td>
+                    <a class="active" href="HomePage.html">Home |</a>
+                    <a class="active" href="SimplePuzzle1.html">Level 1 |</a>
+                    <a class="active" href="SimplePuzzle2.html">Level 2 |</a>
+                    <a class="active" href="SimplePuzzle3.html">Level 3 |</a>
+                    <a class="active" href="SimplePuzzle4.html">Level 4 |</a>
+                    <a class="active" href="SimplePuzzle5.html">Level 5 |</a>
+                    <a class="active" href="feedback.html">Feedback</a>
+                </td>
+                <td align="right">
+                    Select a theme:
+                    <select id="color" onchange="myColor();">
+                        <option value="grey">Grey</option>
+                        <option value="pink">Pink</option>
+                        <option value="lightblue">Light Blue</option>
+                        <option value="lightgreen">Light Green</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="orange">Orange</option>
+                    </select>
 
-                    </td>
-                </tr>
-            </table>
-        </div>
+                </td>
+            </tr>
+        </table>
+    </div>
     <br />
     <br />
     Enter the values in the boxes, and press Submit.
