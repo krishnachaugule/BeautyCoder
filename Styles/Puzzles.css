@@ -75,7 +75,8 @@ td{
 value{
     color:lightgrey;
 }
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  input1{
+      height:70px;
+      width:70px;
+      background-color:gold;
   }
