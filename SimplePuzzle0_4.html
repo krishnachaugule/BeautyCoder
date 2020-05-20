@@ -5,12 +5,13 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="Styles\Puzzles.css" />
+    <script src="Scripts/puzzle1.js"></script>
     <script src="Scripts/common.js"></script>
-    <script src="Scripts/Puzzle0.js"></script>
+
 </head>
-<body>
+
+<body class="Body" onload="checkCookie();">
     <img id="image" src="images/Capture.JPG" />
-    <!--<div w3-include-html="Header.html"></div>-->
     <div id="divMenu" class="topnav">
         <table width="100%">
             <tr>
@@ -100,7 +101,7 @@
                 <td align="right">
                     Select a theme:
                     <select id="color" onchange="myColor();">
-                        <option value="grey">Grey</option>
+                        <option value="lightgrey">Grey</option>
                         <option value="pink">Pink</option>
                         <option value="lightblue">Light Blue</option>
                         <option value="lightgreen">Light Green</option>
@@ -114,51 +115,8 @@
     </div>
     <br />
     <br />
-    Enter the values in the boxes, and press Submit.
-    <br />
-    If you get it right, move on to the next level!
-    <br />
-    <br />
-    <form class="margin">
-        <table>
-            <tr>
-                <td class="border">12</td>
-                <td class="border">+</td>
-                <td class="border">18</td>
-                <td class="border">=</td>
-                <td class="border">30</td>
-            </tr>
-            <tr>
-                <td class="border">+</td>
-                <td class="border2"></td>
-                <td class="border">+</td>
-                <td class="border2"></td>
-                <td class="border">+</td>
-            </tr>
-            <tr>
-                <td class="border">16</td>
-                <td class="border">+</td>
-                <td class="border"><input type="number" maxlength="4" id="S1" name="S1" /></td>
-                <td class="border">=</td>
-                <td class="border">29</td>
-            </tr>
-            <tr>
-                <td class="border">=</td>
-                <td class="border2"></td>
-                <td class="border">=</td>
-                <td class="border2"></td>
-                <td class="border">+</td>
-            </tr>
-            <tr>
-                <td class="border">28</td>
-                <td class="border">+</td>
-                <td class="border">31</td>
-                <td class="border">=</td>
-                <td class="border"><input type="number" maxlength="4" id="S2" name="S2" /></td>
-            </tr>
-        </table>
-        <br />
-        <input class="extra" type="button" name="Submit" value="Submit" onclick="mySum0();" />
-    </form>
+    <p class="margin">
+        Hey guys! Sorry, but this part of the puzzle hasn't been updated yet. Please come back later!
+    </p>
 </body>
 </html>
